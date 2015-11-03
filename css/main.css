@@ -178,4 +178,93 @@ th {
 html {
   font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Sans Serif; }
 
+h1 {
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+h2 {
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+#hero {
+  background-color: #2FC99E;
+  height: 100vh; }
+
+#logo {
+  width: 200px;
+  margin-left: 0.85em;
+  display: block; }
+  @media (min-width: 7000px) {
+    #logo {
+      width: 245px; } }
+
+#hero-content {
+  color: #FFF;
+  text-align: left;
+  max-width: 600px;
+  margin-top: 7em; }
+  @media (min-width: 800px) {
+    #hero-content {
+      max-width: 1070px; } }
+  #hero-content a {
+    color: steelblue;
+    transition: color 0.75s ease;
+    text-decoration: none; }
+  #hero-content h1 {
+    font-size: 2.5em; }
+    @media (min-width: 7000px) {
+      #hero-content h1 {
+        font-size: 3em; } }
+    @media (min-width: 1000px) {
+      #hero-content h1 {
+        font-size: 4em; } }
+  #hero-content h2 {
+    margin-top: 2em;
+    font-size: 1.75em; }
+    @media (min-width: 7000px) {
+      #hero-content h2 {
+        font-size: 2.25em; } }
+
+.arrow-background {
+  background-color: steelblue;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.09), 0 8px 17px 0 rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 5em auto;
+  -webkit-transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out; }
+  .arrow-background:hover {
+    box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.12), 0 12px 15px 0 rgba(0, 0, 0, 0.14);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+    .arrow-background:hover .arrow {
+      -webkit-transform: scale(1.1, 1.1), rotate(0deg);
+      transform: scale(1.1, 1.1), rotate(0deg); }
+  @media (min-width: 600px) {
+    .arrow-background {
+      margin: 7em auto; } }
+  @media (min-width: 7000px) {
+    .arrow-background {
+      margin: 6em auto; } }
+  @media (min-width: 800px) {
+    .arrow-background {
+      margin: 7em auto; } }
+  @media (min-width: 1000px) {
+    .arrow-background {
+      margin: 6em auto; } }
+
+.arrow {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid; }
+
 /*# sourceMappingURL=main.css.map */
