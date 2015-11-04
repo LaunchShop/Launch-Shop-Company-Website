@@ -212,6 +212,8 @@ p {
     color: steelblue;
     transition: color 0.75s ease;
     text-decoration: none; }
+    #hero-content a:hover {
+      text-decoration: underline; }
   #hero-content h1 {
     font-size: 3em; }
     @media (min-width: 1000px) {
@@ -274,8 +276,7 @@ p {
 
 #services-container {
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 6em; }
+  margin-top: 2em; }
   #services-container h2 {
     font-size: 2.5em;
     font-weight: 800;
@@ -298,5 +299,32 @@ p {
     @media (min-width: 800px) {
       #services-container .col-sm-3 {
         margin-top: 0; } }
+
+#about {
+  text-align: center;
+  margin: 4em auto; }
+  @media (min-width: 800px) {
+    #about {
+      text-align: left; } }
+  #about h2 {
+    font-size: 2.25em;
+    font-weight: 800;
+    color: #31393C;
+    margin-bottom: 0.5em; }
+    @media (min-width: 1000px) {
+      #about h2 {
+        font-size: 3em; } }
+
+#footer {
+  height: 110px;
+  background-color: #2FC99E; }
+  #footer p {
+    font-size: 1em;
+    color: #FFF; }
+  #footer .fa-circle {
+    color: #EE6352; }
+  #footer .fa-stack {
+    font-size: 2em;
+    margin: 14px 10px 10px; }
 
 /*# sourceMappingURL=main.css.map */
