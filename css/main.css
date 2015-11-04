@@ -194,6 +194,9 @@ p {
   @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
     #hero {
       height: 768px; } }
+  @media (min-width: 1000px) {
+    #hero {
+      max-height: 618px; } }
 
 #logo {
   width: 200px;
