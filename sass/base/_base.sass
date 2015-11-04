@@ -20,7 +20,7 @@ h2
     margin-left: .85em
     display: block
     @include breakpoint(small)
-        width: 245px
+        min-width: 300px !important
     
 #hero-content
     color: $white
@@ -47,7 +47,7 @@ h2
             font-size: 2.25em
             
 .arrow-background
-    background-color: steelblue
+    background-color: $orange
     width: 60px
     height: 60px
     border-radius: 50%
@@ -64,13 +64,13 @@ h2
             -webkit-transform: scale(1.1, 1.1), rotate(0deg)
             transform: scale(1.1, 1.1), rotate(0deg)
     @include breakpoint(extra-small)
-        margin: 7em auto
+        margin: 9em auto
     @include breakpoint(small)
-        margin: 6em auto
+        margin: 2.8em auto
     @include breakpoint(medium)
-        margin: 7em auto
-    @include breakpoint(large)
         margin: 6em auto
+    @include breakpoint(large)
+        margin: 4.75em auto
         
 .arrow
     position: relative

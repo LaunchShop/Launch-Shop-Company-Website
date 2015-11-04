@@ -194,9 +194,9 @@ h2 {
   width: 200px;
   margin-left: 0.85em;
   display: block; }
-  @media (min-width: 7000px) {
+  @media (min-width: 700px) {
     #logo {
-      width: 245px; } }
+      min-width: 300px !important; } }
 
 #hero-content {
   color: #FFF;
@@ -212,7 +212,7 @@ h2 {
     text-decoration: none; }
   #hero-content h1 {
     font-size: 2.5em; }
-    @media (min-width: 7000px) {
+    @media (min-width: 700px) {
       #hero-content h1 {
         font-size: 3em; } }
     @media (min-width: 1000px) {
@@ -221,12 +221,12 @@ h2 {
   #hero-content h2 {
     margin-top: 2em;
     font-size: 1.75em; }
-    @media (min-width: 7000px) {
+    @media (min-width: 700px) {
       #hero-content h2 {
         font-size: 2.25em; } }
 
 .arrow-background {
-  background-color: steelblue;
+  background-color: #EE6352;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -244,16 +244,16 @@ h2 {
       transform: scale(1.1, 1.1), rotate(0deg); }
   @media (min-width: 600px) {
     .arrow-background {
-      margin: 7em auto; } }
-  @media (min-width: 7000px) {
+      margin: 9em auto; } }
+  @media (min-width: 700px) {
     .arrow-background {
-      margin: 6em auto; } }
+      margin: 2.8em auto; } }
   @media (min-width: 800px) {
     .arrow-background {
-      margin: 7em auto; } }
+      margin: 6em auto; } }
   @media (min-width: 1000px) {
     .arrow-background {
-      margin: 6em auto; } }
+      margin: 4.75em auto; } }
 
 .arrow {
   position: relative;
