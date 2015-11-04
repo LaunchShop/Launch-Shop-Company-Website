@@ -13,6 +13,10 @@ p
 #hero
     background-color: $green
     height: 100vh
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait)
+        height: 650px
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape)
+        height: 768px
     
 #logo
     width: 200px
@@ -25,7 +29,9 @@ p
     color: $white
     text-align: left
     max-width: 600px
-    margin-top: 7em
+    margin-top: 1em
+    @media (min-width: 375px)
+        margin-top: 6em
     @include breakpoint(medium)
         max-width: 700px
     @include breakpoint(large)
@@ -54,7 +60,7 @@ p
     border-radius: 50%
     box-shadow: 0 6px 20px 0 rgba(0,0,0,0.09),0 8px 17px 0 rgba(0,0,0,0.08)
     display: block
-    margin: 4em auto 0
+    margin: 2em auto 0
     -webkit-transition: box-shadow .1s ease-in-out, transform .1s ease-in-out
     transition: box-shadow .1s ease-in-out, transform .1s ease-in-out
     &:hover
@@ -64,6 +70,8 @@ p
         .arrow
             -webkit-transform: scale(1.1, 1.1), rotate(0deg)
             transform: scale(1.1, 1.1), rotate(0deg)
+    @media (min-width: 375px)
+        margin-top: 4em
     @media (min-width: 458px)
         margin: 7em auto 0
     @media (min-width: 518px)
@@ -75,7 +83,7 @@ p
     @media (min-width: 800px)
         margin: 8em auto 0
     @media (min-width: 1000px)
-        margin: 4em auto 0
+        margin: 3.5em auto 0
         
 .arrow
     position: relative
@@ -138,5 +146,8 @@ p
     .fa-stack
         font-size: 2em
         margin: 14px 10px 10px
+        &:hover
+            .fa-circle
+                color: darken($orange, 5%)
         
         
