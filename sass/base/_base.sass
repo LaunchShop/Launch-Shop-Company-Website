@@ -1,6 +1,6 @@
 //General Styles
 
-h1, h2, h3, h4, h5, p
+body, h1, h2, h3, h4, h5, p
     font-family: $font-josefin
     
 h1
@@ -10,146 +10,61 @@ p
     color: $offBlack
     font-size: 1.2em
     
-#hero
+#page
     background-color: $green
     height: 100vh
-    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait)
-        height: 650px
-    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape)
-        height: 768px
-    @include breakpoint(large)
-        max-height: 618px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
     
 #logo
     width: 200px
-    margin-left: .85em
-    display: block
     @include breakpoint(small)
         min-width: 300px !important
     
-#hero-content
+#content
     color: $white
-    text-align: left
-    max-width: 600px
-    margin-top: 1em
-    @media (min-width: 375px)
-        margin-top: 6em
-    @include breakpoint(medium)
-        max-width: 700px
-    @include breakpoint(large)
-        max-width: 1000px
-    a
-        color: steelblue
-        transition: color 0.75s ease
-        text-decoration: none
-        &:hover
-            text-decoration: underline
-        
+    text-align: center
     h1
-        font-size: 3em
+        font-size: 2.5em
         @include breakpoint(large)
-            font-size: 4.5em
+            font-size: 4em
     h2
-        margin-top: 2em
         font-size: 1.75em
         @include breakpoint(small)
             font-size: 2.25em
-            
-.arrow-background
-    background-color: $orange
-    width: 60px
-    height: 60px
-    border-radius: 50%
-    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.09),0 8px 17px 0 rgba(0,0,0,0.08)
-    display: block
-    margin: 2em auto 0
-    -webkit-transition: box-shadow .1s ease-in-out, transform .1s ease-in-out
-    transition: box-shadow .1s ease-in-out, transform .1s ease-in-out
-    &:hover
-        box-shadow: 0 17px 50px 0 rgba(0,0,0,0.12),0 12px 15px 0 rgba(0,0,0,0.14)
-        -webkit-transform: scale(1.1, 1.1)
-        transform: scale(1.1, 1.1)
-        .arrow
-            -webkit-transform: scale(1.1, 1.1), rotate(0deg)
-            transform: scale(1.1, 1.1), rotate(0deg)
-    @media (min-width: 375px)
-        margin-top: 4em
-    @media (min-width: 458px)
-        margin: 7em auto 0
-    @media (min-width: 518px)
-        margin: 9em auto 0
-    @media (min-width: 589px)
-        margin: 11em auto 0
-    @media (min-width: 700px)
-        margin: 5.5em auto 0
-    @media (min-width: 800px)
-        margin: 8em auto 0
-    @media (min-width: 1000px)
-        margin: 3.5em auto 0
-        
-.arrow
-    position: relative
-    width: 15px
-    height: 15px
-    margin: auto
-    top: 18px
-    -webkit-transform: rotate(45deg)
-    border-left: none
-    border-top: none
-    border-right: 2px #fff solid
-    border-bottom: 2px #fff solid
-
-#services-container
-    text-align: center
-    margin-top: 2em
-    h2
-        font-size: 2.5em
-        font-weight: 800
-        color: $offBlack
-        margin-bottom: .5em
-        @include breakpoint(large)
-            font-size: 3.5em
-    h3
-        color: $offBlack
-        font-size: 2em
-    p
-        max-width: 250px
-        margin: 0 auto
-        @include breakpoint(medium)
+#mc_embed_signup
+    margin-top: 1.5em
+    .mc-field-group
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        @include breakpoint(small)
+            flex-direction: row
+        label
+            font-size: 1.5em
+            font-weight: 300
+            width: 200px
+            @include breakpoint(small)
+                font-size: 2em
+        .input-group
             max-width: 300px
-    .col-sm-3
-        margin-top: 2em
-        @include breakpoint(medium)
-            margin-top: 0
-        
-#about
-    text-align: center
-    margin: 4em auto
-    @include breakpoint(medium)
-        text-align: left
-    h2
-        font-size: 2.25em
-        font-weight: 800
-        color: $offBlack
-        margin-bottom: .5em
-        @include breakpoint(large)
-            font-size: 3em
-    
-#footer 
-    height: 110px
-    background-color: $green
-    p
-        font-size: 1em
+        .btn-subscribe
+            transition: all, .3s, ease
+            background-color: darken($green, 10%)
+            &:hover, &:active, &:focus
+                background-color: darken($green, 20%)
+                color: $white
+
+#footer
+    color: $white
+    .fa
+        transition: all, .3s, ease
         color: $white
-        @include breakpoint(smalldevices)
-            font-size: 1.1em
-    .fa-circle
-        color: $orange
-    .fa-stack
-        font-size: 2em
-        margin: 14px 10px 10px
-        &:hover
-            .fa-circle
-                color: darken($orange, 5%)
-        
+        width: 30px
+        height: 30px
+        border-radius: 50px
+        background-color: darken($green, 10%)
         
