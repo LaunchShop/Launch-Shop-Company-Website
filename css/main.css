@@ -175,6 +175,9 @@ td,
 th {
   padding: 0; }
 
+body {
+  background-color: #2FC99E; }
+
 body, h1, h2, h3, h4, h5, p {
   font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Sans Serif; }
 
@@ -187,12 +190,13 @@ p {
 
 #page {
   background-color: #2FC99E;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
-
+@media(min-width: 374px) {
+  #page {
+    height: 100vh; } }
 #logo {
   width: 200px; }
   @media (min-width: 700px) {
@@ -238,15 +242,34 @@ p {
       #mc_embed_signup .mc-field-group .btn-subscribe:hover, #mc_embed_signup .mc-field-group .btn-subscribe:active, #mc_embed_signup .mc-field-group .btn-subscribe:focus {
         background-color: #1c765d;
         color: #FFF; }
+  #mc_embed_signup div.mce_inline_error {
+    display: none !important; }
 
 #footer {
   color: #FFF; }
-  #footer .fa {
+
+#social-icons {
+  margin-top: 1em; }
+  #social-icons a {
+    text-decoration: none !important; }
+    #social-icons a:hover {
+      text-decoration: none !important; }
+  #social-icons .fa {
     transition: all, 0.3s, ease;
     color: #FFF;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
-    background-color: #25a07e; }
+    background-color: #25a07e;
+    font-size: 1.75em;
+    text-align: center;
+    padding: 0.75em 0;
+    margin: 0.5em; }
+    @media (min-width: 700px) {
+      #social-icons .fa {
+        margin: 1em; } }
+    #social-icons .fa:hover, #social-icons .fa:active, #social-icons .fa:focus {
+      background-color: #1c765d;
+      color: #FFF; }
 
 /*# sourceMappingURL=main.css.map */

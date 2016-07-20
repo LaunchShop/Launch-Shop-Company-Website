@@ -1,4 +1,6 @@
 //General Styles
+body
+    background-color: $green
 
 body, h1, h2, h3, h4, h5, p
     font-family: $font-josefin
@@ -12,11 +14,12 @@ p
     
 #page
     background-color: $green
-    height: 100vh
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
+    @media(min-width: 374px)
+        height: 100vh
     
 #logo
     width: 200px
@@ -57,14 +60,32 @@ p
             &:hover, &:active, &:focus
                 background-color: darken($green, 20%)
                 color: $white
+    div.mce_inline_error
+        display: none !important
 
 #footer
     color: $white
+
+#social-icons
+    margin-top: 1em
+    a
+        text-decoration: none !important
+        &:hover
+            text-decoration: none !important
     .fa
-        transition: all, .3s, ease
+        transition: all, 0.3s, ease
         color: $white
-        width: 30px
-        height: 30px
+        width: 60px
+        height: 60px
         border-radius: 50px
         background-color: darken($green, 10%)
+        font-size: 1.75em
+        text-align: center
+        padding: .75em 0
+        margin: .5em
+        @include breakpoint(small)
+            margin: 1em
+        &:hover, &:active, &:focus
+            background-color: darken($green, 20%)
+            color: $white
         
